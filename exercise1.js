@@ -82,8 +82,8 @@ function countTo10() {
 //exercise 3
 //nivel 2
 
-const logUser = (userName) => {
+const logUser = ((userName) => {
 	console.log(`this is the username: ${userName}`)
-}
+})();
 
 countTo10()
