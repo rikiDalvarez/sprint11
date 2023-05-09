@@ -24,62 +24,21 @@ console.log(`${saludo}`)
 
 //nivel 3
 //exercise 1
-function countTo10() {
-	let funcArray = [
-		() => {
-			for (let i = 0; i < 10; i++) {
-				console.log(i)
-			}
-		},
-		() => {
-			for (let i = 0; i < 10; i++) {
-				console.log(i)
-			}
-		},
-		() => {
-			for (let i = 0; i < 10; i++) {
-				console.log(i)
-			}
-		},
-		() => {
-			for (let i = 0; i < 10; i++) {
-				console.log(i)
-			}
-		},
-		() => {
-			for (let i = 0; i < 10; i++) {
-				console.log(i)
-			}
-		},
-		() => {
-			for (let i = 0; i < 10; i++) {
-				console.log(i)
-			}
-		},
-		() => {
-			for (let i = 0; i < 10; i++) {
-				console.log(i)
-			}
-		},
-		() => {
-			for (let i = 0; i < 10; i++) {
-				console.log(i)
-			}
-		},
-		() => {
-			for (let i = 0; i < 10; i++) {
-				console.log(i)
-			}
-		},
-		() => {
-			for (let i = 0; i < 10; i++) {
-				console.log(i)
-			}
-		},
-	];
 
-	for (let j = 0; j < funcArray.length; j++) {
-		funcArray[j]();
+function countTo10() {
+	let array = [];
+
+	function count() {
+		for (let i = 0; i < 10; i++) {
+			console.log(i)
+		}
+	}
+	for (let i = 0; i < 10; i++) {
+		array.push(count)
+	}
+
+	for (let j = 0; j < array.length; j++) {
+		array[j]();
 	}
 }
 
