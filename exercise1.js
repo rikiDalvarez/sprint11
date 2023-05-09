@@ -13,10 +13,14 @@ function printUserComplete(firstName, secondName) {
 
 //nivel 2
 //exercici 2
-function printUser(string) {
-	let name = `${string}`
-	return name;
+const printHello = (string) => {
+	return `hello my name is ${string}`
 }
+
+const saludo = printHello("John")
+
+console.log(`${saludo}`)
+
 
 //nivel 3
 //exercise 1
@@ -87,4 +91,4 @@ const logUser = (() => {
 	console.log(`this is the username: ${userName}`)
 })();
 
-countTo10()
+// countTo10()
