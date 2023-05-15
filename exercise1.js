@@ -17,9 +17,7 @@ const printHello = (string) => {
 	return `hello my name is ${string}`
 }
 
-const saludo = printHello("John")
-
-console.log(`${saludo}`)
+console.log(`${printHello("John")}`)
 
 
 //nivel 3
